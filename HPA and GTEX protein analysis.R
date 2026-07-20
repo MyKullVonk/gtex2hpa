@@ -9,10 +9,6 @@ HPA <- read.delim("tsv dataset ")
 library(tidyverse)
 library(ggplot2)
 
-packageVersion("tidyverse")
-packageVersion("ggplot2")
-
-
 
 #converting protein abundance dataset to long format, 
 #removing metadata rows
