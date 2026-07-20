@@ -1,7 +1,7 @@
-setwd("C:/Users/blueg/Documents/binf practice projects/HPA vs GTEX")
+setwd("working directory")
 
-GTEX <- read.csv("C:/Users/blueg/Documents/binf practice projects/HPA vs GTEX/NIHMS1624446-supplement-2 (1).csv", header = FALSE)
-HPA <- read.delim("C:/Users/blueg/Documents/binf practice projects/HPA vs GTEX/normal_ihc_data.tsv")
+GTEX <- read.csv("csv dataset1", header = FALSE)
+HPA <- read.delim("tsv dataset ")
 
 #install.packages("tidyverse")
 #install.packages("ggplot2")
@@ -21,6 +21,7 @@ colnames(GTEX) <- c("gene_id", as.vector(unlist(header_row[ ,-1])))
 
 GTEX_abundance <- GTEX[-c(1:3),]
 
+#converted the GTEX file to long format
 GTEX_abun_long <- GTEX_abundance %>%
   pivot_longer(
     cols = -gene_id,
