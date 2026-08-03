@@ -1,4 +1,4 @@
-# R-Studio
+# gtex2hpa
 R version 4.4.1 (2024-06-14 ucrt) -- "Race for Your Life"
 
 R studio 2026.05.1 Build 225
